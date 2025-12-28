@@ -202,3 +202,165 @@ main {
 #comments h2 {
     color: #464646;
 }
+
+@media (max-width: 1024px) {
+    #summary {
+        margin: 6rem auto 3rem auto;
+        height: auto;
+        min-height: 20rem;
+    }
+
+    #summary h2 {
+        font-size: 3.5rem;
+    }
+
+    #summary article {
+        right: 2rem;
+    }
+
+    #summary article img {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    #comment-form {
+        width: 92%;
+    }
+
+    #comments {
+        width: 92%;
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+    #summary {
+        margin: 4rem auto 2rem auto;
+        padding: 1.5rem;
+        height: auto;
+        min-height: auto;
+    }
+
+    #summary h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    #summary article {
+        position: static;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 1.5rem;
+    }
+
+    #summary article img {
+        width: 9rem;
+        height: 9rem;
+        transform: rotateZ(0deg);
+    }
+
+    #read-later {
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+
+    #read-later button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    main {
+        width: 95%;
+        margin: 2rem auto;
+        padding: 1rem;
+    }
+
+    .tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    #comment-form {
+        width: 95%;
+        padding: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    #comment-form button {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    .form-control input,
+    .form-control textarea {
+        padding: 0.5rem;
+    }
+
+    #alert {
+        margin: 4rem auto 2rem auto;
+        width: 95%;
+    }
+
+    #comments {
+        width: 95%;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    #comments h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+    #summary {
+        margin: 3rem auto 1.5rem auto;
+        padding: 1rem;
+    }
+
+    #summary h2 {
+        font-size: 1.8rem;
+    }
+
+    #summary article img {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #summary address,
+    #summary time {
+        font-size: 0.9rem;
+    }
+
+    #read-later button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 0.75rem;
+    }
+
+    .tag {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    #comment-form {
+        padding: 1rem;
+    }
+
+    #comments {
+        padding: 0.75rem;
+    }
+
+    #comments h2 {
+        font-size: 1.3rem;
+    }
+}

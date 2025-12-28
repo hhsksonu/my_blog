@@ -41,3 +41,74 @@
 .post:active time {
     color: white;
 }
+
+@media (max-width: 1024px) {
+    .post a {
+        padding: 0.9rem;
+    }
+
+    .post img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .post h3 {
+        font-size: 1rem;
+    }
+
+    .post time {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile styles (up to 767px) */
+@media (max-width: 767px) {
+    .post a {
+        padding: 0.8rem;
+    }
+
+    .post a:hover,
+    .post a:active {
+        transform: scale(1.05);
+    }
+
+    .post img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .post h3 {
+        font-size: 0.95rem;
+        margin: 0.5rem 0 0.25rem 0;
+    }
+
+    .post time {
+        font-size: 0.75rem;
+    }
+}
+
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+    .post a {
+        padding: 1rem 0.5rem;
+        width: 100%;
+    }
+
+    .post a:hover,
+    .post a:active {
+        transform: scale(1.02);
+    }
+
+    .post img {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .post h3 {
+        font-size: 1rem;
+    }
+
+    .post time {
+        font-size: 0.8rem;
+    }
+}

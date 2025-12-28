@@ -40,4 +40,85 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     background-color: white;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    #all-posts {
+        margin: 5rem auto;
+        width: 90%;
+    }
+
+    #all-posts h2 {
+        font-size: 1.8rem;
+        margin: 2.5rem 0;
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        gap: 1.25rem;
+    }
+
+    .post img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .post a {
+        height: 20rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #all-posts {
+        margin: 4rem auto;
+        width: 92%;
+    }
+
+    #all-posts h2 {
+        font-size: 1.6rem;
+        margin: 2rem 0;
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        gap: 1rem;
+    }
+
+    .post img {
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .post a {
+        height: 18rem;
+    }
+}
+
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+    #all-posts {
+        margin: 3rem auto;
+        width: 95%;
+    }
+
+    #all-posts h2 {
+        font-size: 1.4rem;
+        margin: 1.5rem 0;
+    }
+
+    ul {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .post img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .post a {
+        height: auto;
+        min-height: 16rem;
+    }
 }
